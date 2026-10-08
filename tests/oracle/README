@@ -1,0 +1,11 @@
+tasks.tsv: what Python's own XML parser (xml.etree, Python 3.14) reads from
+the task XML files in tests/fixtures/atomic/ and tests/fixtures/written/,
+one line per value (file, name, value), written by gen.py (see its header).
+Independent of this crate: no code shared, only the Task Scheduler schema's
+names.
+
+plaso.tsv: what plaso (the log2timeline/plaso:20260720 Docker image) reads
+from tests/fixtures/plaso/wintask.job with its winjob parser (psort -o
+json_line): its two events (timestamp_desc and the time in microseconds,
+the wall clock as plaso shows it) and the values both carry. Written from
+plaso's output, not from this crate.

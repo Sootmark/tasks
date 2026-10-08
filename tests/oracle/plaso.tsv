@@ -1,0 +1,7 @@
+wintask.job	Last Time Executed	1377348120112000
+wintask.job	Scheduled to start	1373643720000000
+wintask.job	application	C:\Program Files (x86)\Google\Update\GoogleUpdate.exe
+wintask.job	parameters	/ua /installsource scheduler
+wintask.job	username	Brian
+wintask.job	trigger_type	1
+wintask.job	comment	Keeps your Google software up to date. If this task is disabled or stopped, your Google software will not be kept up to date, meaning security vulnerabilities that may arise cannot be fixed and features may not work. This task uninstalls itself when there is no Google software using it.

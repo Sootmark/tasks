@@ -1,0 +1,5 @@
+OneDriveSync.gz is a task XML file written for these tests, in UTF-16 with a
+byte order mark and CRLF line ends as Windows writes them, stored
+gzip-compressed: a hidden task run as SYSTEM, elevated, with calendar, boot,
+event and logon triggers, an encoded PowerShell command and a COM handler.
+Under this crate's licences.

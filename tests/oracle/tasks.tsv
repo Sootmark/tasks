@@ -1,0 +1,51 @@
+OneDriveSync	Author	CONTOSO\svc-backup
+OneDriveSync	Date	2024-03-05T09:14:22.4581234
+OneDriveSync	Description	Keeps "OneDrive" & Office in sync
+OneDriveSync	URI	\Microsoft\Windows\SyncCenter\OneDriveSync
+OneDriveSync	action0	%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoP -W Hidden -Enc SQBFAFgA
+OneDriveSync	action0.WorkingDirectory	C:\ProgramData\Sync
+OneDriveSync	action1	COM {A6BA00FE-40E8-477C-B713-C64A14F18ADB} (<run mode="silent"/>)
+OneDriveSync	context	LocalSystem
+OneDriveSync	enabled	true
+OneDriveSync	hidden	true
+OneDriveSync	principal0.RunLevel	HighestAvailable
+OneDriveSync	principal0.UserId	S-1-5-18
+OneDriveSync	principal0.id	LocalSystem
+OneDriveSync	trigger0.EndBoundary	2025-03-05T09:30:00+01:00
+OneDriveSync	trigger0.Repetition	PT15M
+OneDriveSync	trigger0.StartBoundary	2024-03-05T09:30:00Z
+OneDriveSync	trigger0.enabled	true
+OneDriveSync	trigger0.kind	Calendar
+OneDriveSync	trigger1.enabled	false
+OneDriveSync	trigger1.kind	Boot
+OneDriveSync	trigger2.Subscription	<QueryList><Query Id="0" Path="Security"><Select Path="Security">*[System[EventID=4625]]</Select></Query></QueryList>
+OneDriveSync	trigger2.enabled	true
+OneDriveSync	trigger2.kind	Event
+OneDriveSync	trigger3.UserId	CONTOSO\alice
+OneDriveSync	trigger3.enabled	true
+OneDriveSync	trigger3.kind	Logon
+T1053_005_WMI.xml	Author	AtomicRedTeam
+T1053_005_WMI.xml	Date	2021-04-22T12:29:17
+T1053_005_WMI.xml	URI	\T1053_005_WMI
+T1053_005_WMI.xml	action0	notepad.exe
+T1053_005_WMI.xml	context	Author
+T1053_005_WMI.xml	enabled	true
+T1053_005_WMI.xml	hidden	false
+T1053_005_WMI.xml	principal0.GroupId	S-1-5-32-545
+T1053_005_WMI.xml	principal0.RunLevel	LeastPrivilege
+T1053_005_WMI.xml	principal0.id	Author
+T1053_005_WMI.xml	trigger0.StartBoundary	2021-04-22T12:29:00
+T1053_005_WMI.xml	trigger0.enabled	true
+T1053_005_WMI.xml	trigger0.kind	Logon
+T1053_05_SCTASK_HIDDEN_ATTRIB.xml	Author	atomicredteam
+T1053_05_SCTASK_HIDDEN_ATTRIB.xml	Description	atomic red team schedule task with hidden attribute
+T1053_05_SCTASK_HIDDEN_ATTRIB.xml	URI	\atomic red team
+T1053_05_SCTASK_HIDDEN_ATTRIB.xml	action0	C:\Windows\system32\calc.exe"
+T1053_05_SCTASK_HIDDEN_ATTRIB.xml	context	Author
+T1053_05_SCTASK_HIDDEN_ATTRIB.xml	enabled	true
+T1053_05_SCTASK_HIDDEN_ATTRIB.xml	hidden	true
+T1053_05_SCTASK_HIDDEN_ATTRIB.xml	principal0.LogonType	InteractiveToken
+T1053_05_SCTASK_HIDDEN_ATTRIB.xml	principal0.RunLevel	LeastPrivilege
+T1053_05_SCTASK_HIDDEN_ATTRIB.xml	principal0.id	Author
+T1053_05_SCTASK_HIDDEN_ATTRIB.xml	trigger0.enabled	true
+T1053_05_SCTASK_HIDDEN_ATTRIB.xml	trigger0.kind	Logon
